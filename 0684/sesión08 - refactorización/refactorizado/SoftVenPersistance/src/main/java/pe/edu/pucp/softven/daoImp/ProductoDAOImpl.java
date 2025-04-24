@@ -1,69 +1,56 @@
 package pe.edu.pucp.softven.daoImp;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import pe.edu.pucp.softven.dao.ProductoDAO;
+import pe.edu.pucp.softven.daoImp.util.Columna;
 import pe.edu.pucp.softven.db.DBManager;
 import pe.edu.pucp.softven.model.ProductosDTO;
 
-public class ProductoDAOImpl implements ProductoDAO {
+public class ProductoDAOImpl extends DAOImplBase implements ProductoDAO {
 
-    private Connection conexion;
-    private CallableStatement statement;
-    protected ResultSet resultSet;
+    private ProductosDTO producto;
+    
+    public ProductoDAOImpl() {
+        super("VEN_PRODUCTOS");
+        this.producto = null;
+    }
+
+    @Override
+    protected void configurarListaDeColumnas() {
+        this.listaColumnas.add(new Columna("PRODUCTO_ID", true, true));
+        this.listaColumnas.add(new Columna("NOMBRE", false, false));
+        this.listaColumnas.add(new Columna("DESCRIPCION", false, false));
+        this.listaColumnas.add(new Columna("PRECIO", false, false));
+    }
+    
+    @Override
+    protected void incluirValorDeParametrosParaInsercion() {
+        try {
+            this.statement.setString(1, this.producto.getNombre());
+            this.statement.setString(2, this.producto.getDescripcion());
+            this.statement.setDouble(3, this.producto.getPrecio());
+        } catch (SQLException ex) {
+            Logger.getLogger(ProductoDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    @Override
+    protected void incluirValorDeParametrosModificacion() {
+        throw new UnsupportedOperationException("Método no implementado en la clase derivada..");
+    }
+
+    @Override
+    protected void incluirValorDeParametrosEliminacion() {
+        throw new UnsupportedOperationException("Método no implementado en la clase derivada..");
+    }
 
     @Override
     public Integer insertar(ProductosDTO producto) {
-        int resultado = 0;
-        try {
-            this.conexion = DBManager.getInstance().getConnection();
-            this.conexion.setAutoCommit(false);
-            String sql = "INSERT INTO VEN_PRODUCTOS (NOMBRE, DESCRIPCION, PRECIO) VALUES (?,?,?)";
-            this.statement = this.conexion.prepareCall(sql);
-            this.statement.setString(1, producto.getNombre());
-            this.statement.setString(2, producto.getDescripcion());
-            this.statement.setDouble(3, producto.getPrecio());
-            //resultado = this.statement.executeUpdate();
-            this.statement.executeUpdate();
-            resultado = this.retornarUltimoAutoGenerado();
-            this.conexion.commit();
-        } catch (SQLException ex) {
-            System.err.println("Error al intentar insertar - " + ex);
-            try {
-                if (this.conexion != null) {
-                    this.conexion.rollback();
-                }
-            } catch (SQLException ex1) {
-                System.err.println("Error al hacer rollback - " + ex1);
-            }
-        } finally {
-            try {
-                if (this.conexion != null) {
-                    this.conexion.close();
-                }
-            } catch (SQLException ex) {
-                System.err.println("Error al cerrar la conexión - " + ex);
-            }
-        }
-        return resultado;
-    }
-
-    public Integer retornarUltimoAutoGenerado() {
-        Integer resultado = null;
-        try {
-            String sql = "select @@last_insert_id as id";
-            this.statement = this.conexion.prepareCall(sql);
-            this.resultSet = this.statement.executeQuery();
-            if (this.resultSet.next()) {
-                resultado = this.resultSet.getInt("id");
-            }
-        } catch (SQLException ex) {
-            System.err.println("Error al intentar retornarUltimoAutoGenerado - " + ex);
-        }
-        return resultado;
+        this.producto = producto;
+        return super.insertar();
     }
 
     @Override
@@ -132,7 +119,7 @@ public class ProductoDAOImpl implements ProductoDAO {
         try {
             this.conexion = DBManager.getInstance().getConnection();
             this.conexion.setAutoCommit(false);
-            String sql = "UPDATE VEN_PRODUCTOS SET NOMBRE=?, DESCRIPCION=?, PRECIO=? WHERE PRODUCTO_ID=?";
+            String sql = this.generarSQLParaModificacion();
             this.statement = this.conexion.prepareCall(sql);
             this.statement.setString(1, producto.getNombre());
             this.statement.setString(2, producto.getDescripcion());
@@ -168,7 +155,7 @@ public class ProductoDAOImpl implements ProductoDAO {
         try {
             this.conexion = DBManager.getInstance().getConnection();
             this.conexion.setAutoCommit(false);
-            String sql = "DELETE FROM VEN_PRODUCTOS WHERE PRODUCTO_ID=?";
+            String sql = this.generarSQLParaEliminacion();
             this.statement = this.conexion.prepareCall(sql);
             this.statement.setInt(1, producto.getProductoId());
             resultado = this.statement.executeUpdate();

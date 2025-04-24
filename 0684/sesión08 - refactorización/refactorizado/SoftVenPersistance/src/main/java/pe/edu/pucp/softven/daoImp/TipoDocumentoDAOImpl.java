@@ -1,26 +1,30 @@
 package pe.edu.pucp.softven.daoImp;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import pe.edu.pucp.softven.dao.TipoDocumentoDAO;
+import pe.edu.pucp.softven.daoImp.util.Columna;
 import pe.edu.pucp.softven.db.DBManager;
 import pe.edu.pucp.softven.model.TiposDocumentosDTO;
 
-public class TipoDocumentoDAOImpl implements TipoDocumentoDAO {
+public class TipoDocumentoDAOImpl extends DAOImplBase implements TipoDocumentoDAO {
 
-    private Connection conexion;
-    private CallableStatement statement;
-    protected ResultSet resultSet;
-
+    public TipoDocumentoDAOImpl(){
+        super("VEN_TIPOS_DOCUMENTOS");
+    }
+    
+        @Override
+    protected void configurarListaDeColumnas() {
+        this.listaColumnas.add(new Columna("TIPO_DOCUMENTO_ID", true, false));
+        this.listaColumnas.add(new Columna("NOMBRE", false, false));
+    }
+    
     @Override
     public Integer insertar(TiposDocumentosDTO tipoDocumento) {
         int resultado = 0;
         try {
             this.conexion = DBManager.getInstance().getConnection();
             this.conexion.setAutoCommit(false);
-            String sql = "INSERT INTO VEN_TIPOS_DOCUMENTOS (TIPO_DOCUMENTO_ID, NOMBRE) VALUES (?,?)";
+            String sql = this.generarSQLParaInsercion();
             this.statement = this.conexion.prepareCall(sql);
             this.statement.setInt(1, tipoDocumento.getTipoDocumentoId());
             this.statement.setString(2, tipoDocumento.getNombre());
