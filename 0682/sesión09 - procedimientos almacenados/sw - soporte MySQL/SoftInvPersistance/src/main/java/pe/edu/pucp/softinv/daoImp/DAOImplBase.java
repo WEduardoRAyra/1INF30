@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import pe.edu.pucp.softinv.daoImp.util.Columna;
@@ -345,5 +346,44 @@ public abstract class DAOImplBase {
 
     protected void agregarObjetoALaLista(List lista) throws SQLException {
         throw new UnsupportedOperationException("Método no sobreescrito.");
+    }
+
+    protected void ejecutarProcedimientoAlmacenado(String sql, Boolean conTransaccion) {
+        Consumer incluirValorDeParametros = null;
+        Object parametros = null;
+        this.ejecutarProcedimientoAlmacenado(sql, incluirValorDeParametros, parametros, conTransaccion);
+    }
+
+    protected void ejecutarProcedimientoAlmacenado(String sql, Consumer incluirValorDeParametros, Object parametros, Boolean conTransaccion) {
+        try {
+            if (conTransaccion) {
+                this.iniciarTransaccion();
+            } else {
+                this.abrirConexion();
+            }
+            this.colocarSQLenStatement(sql);
+            if (incluirValorDeParametros != null) {
+                incluirValorDeParametros.accept(parametros);
+            }
+            this.ejecutarModificacionEnBD();
+            if (conTransaccion) {
+                this.comitarTransaccion();
+            }
+        } catch (SQLException ex) {
+            if (conTransaccion)
+                try {
+                this.rollbackTransaccion();
+            } catch (SQLException ex1) {
+                Logger.getLogger(DAOImplBase.class.getName()).log(Level.SEVERE, null, ex1);
+            }
+            Logger.getLogger(DAOImplBase.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                this.cerrarConexion();
+            } catch (SQLException ex) {
+                Logger.getLogger(DAOImplBase.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+
     }
 }
