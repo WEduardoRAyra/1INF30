@@ -1,0 +1,34 @@
+package pe.edu.pucp.softven.db;
+
+
+public class DBManagerMSSQL extends DBManager{
+
+    private DBManagerMSSQL(){
+        //
+    }
+    
+    static void crearInstanciaConcreta() {
+        if (DBManager.dbManager == null) {
+            DBManager.dbManager = new DBManagerMSSQL();
+        }
+    }
+    
+    @Override
+    protected String getURL() {
+        String url = this.tipo_de_driver.concat("://");
+        url = url.concat(this.nombre_de_host);
+        url = url.concat(":");
+        url = url.concat(this.puerto);
+        url = url.concat(";");
+        url = url.concat("databaseName=" + this.base_de_datos);
+        url = url.concat(";encrypt=false");
+        //System.out.println(url);
+        return url;
+    }
+    
+    @Override
+    public String retornarSQLParaUltimoAutoGenerado(){
+        String sql = "select @@IDENTITY as id";
+        return sql;
+    }
+}

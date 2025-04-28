@@ -9,22 +9,23 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 import pe.edu.pucp.softven.db.util.Cifrado;
+import pe.edu.pucp.softven.db.util.MotorDeBaseDeDatos;
 
-public class DBManager {
+public abstract class DBManager {
 
     private static final String ARCHIVO_CONFIGURACION = "jdbc.properties";
-
-    private Connection conexion;
-    private String driver;
-    private String tipo_de_driver;
-    private String base_de_datos;
-    private String nombre_de_host;
-    private String puerto;
-    private String usuario;
-    private String contraseña;
-    private static DBManager dbManager = null;
     
-    private DBManager(){
+    private Connection conexion;
+    protected String driver;
+    protected String tipo_de_driver;
+    protected String base_de_datos;
+    protected String nombre_de_host;
+    protected String puerto;
+    protected String usuario;
+    protected String contraseña;
+    protected static DBManager dbManager = null;
+
+    protected DBManager() {
         //constructor privado para evitar que se creen instancias.
         //Solo se podrá crear una instancia y esta debe hacerse usando el 
         //método getInstance()
@@ -38,14 +39,37 @@ public class DBManager {
     }
 
     private static void createInstance() {
-        if (DBManager.dbManager == null) {            
-            DBManager.dbManager = new DBManager();
+        if (DBManager.dbManager == null) {
+            if (DBManager.obtenerMotorDeBaseDeDatos() == MotorDeBaseDeDatos.MYSQL) {
+                DBManagerMySQL.crearInstanciaConcreta();
+            } else {
+                DBManagerMSSQL.crearInstanciaConcreta();
+            }
             DBManager.dbManager.leer_archivo_de_propiedades();
         }
     }
 
-    public Connection getConnection() {
+    private static MotorDeBaseDeDatos obtenerMotorDeBaseDeDatos() {
+        Properties properties = new Properties();
         try {            
+            String nmArchivoConf = "/" + ARCHIVO_CONFIGURACION;
+
+            properties.load(DBManager.class.getResourceAsStream(nmArchivoConf));
+            String tipo_de_driver = properties.getProperty("tipo_de_driver");
+            if (tipo_de_driver.equals("jdbc:mysql"))
+                return MotorDeBaseDeDatos.MYSQL;
+            else
+                return MotorDeBaseDeDatos.MSSQL;
+        } catch (FileNotFoundException ex) {
+            System.err.println("Error al leer el archivo de propiedades - " + ex);
+        } catch (IOException ex) {
+            System.err.println("Error al leer el archivo de propiedades - " + ex);
+        }
+        return null;
+    }
+    
+    public Connection getConnection() {
+        try {
             Class.forName(this.driver);
             //System.out.println(this.usuario);
             //System.out.println(this.contraseña);
@@ -57,16 +81,7 @@ public class DBManager {
         return conexion;
     }
 
-    private String getURL() {
-        String url = this.tipo_de_driver.concat("://");
-        url = url.concat(this.nombre_de_host);
-        url = url.concat(":");
-        url = url.concat(this.puerto);
-        url = url.concat("/");
-        url = url.concat(this.base_de_datos);
-        //System.out.println(url);
-        return url;
-    }
+    protected abstract String getURL();
 
     private void leer_archivo_de_propiedades() {
         Properties properties = new Properties();
@@ -89,4 +104,6 @@ public class DBManager {
             System.err.println("Error al leer el archivo de propiedades - " + ex);
         }
     }
+    
+    public abstract String retornarSQLParaUltimoAutoGenerado();     
 }

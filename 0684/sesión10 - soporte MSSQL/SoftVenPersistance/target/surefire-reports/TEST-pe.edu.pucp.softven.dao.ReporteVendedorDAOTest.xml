@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pe.edu.pucp.softven.dao.ReporteVendedorDAOTest" time="0.238" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pe.edu.pucp.softven.dao.ReporteVendedorDAOTest" time="0.239" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión10 - soporte MSSQL\SoftVenPersistance\target\test-classes;G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión10 - soporte MSSQL\SoftVenPersistance\target\classes;D:\Users\amelgar\.m2\repository\pe\edu\pucp\softven\SoftVenDBManager\1.0\SoftVenDBManager-1.0.jar;D:\Users\amelgar\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;D:\Users\amelgar\.m2\repository\com\mysql\mysql-connector-j\9.2.0\mysql-connector-j-9.2.0.jar;D:\Users\amelgar\.m2\repository\com\google\protobuf\protobuf-java\4.29.0\protobuf-java-4.29.0.jar;D:\Users\amelgar\.m2\repository\e\edu\pucp\softven\SoftVenModel\1.0\SoftVenModel-1.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;D:\Users\amelgar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;D:\Users\amelgar\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
+    <property name="java.class.path" value="G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión10 - soporte MSSQL\SoftVenPersistance\target\test-classes;G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión10 - soporte MSSQL\SoftVenPersistance\target\classes;D:\Users\amelgar\.m2\repository\pe\edu\pucp\softven\SoftVenDBManager\1.0\SoftVenDBManager-1.0.jar;D:\Users\amelgar\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;D:\Users\amelgar\.m2\repository\com\mysql\mysql-connector-j\9.2.0\mysql-connector-j-9.2.0.jar;D:\Users\amelgar\.m2\repository\com\google\protobuf\protobuf-java\4.29.0\protobuf-java-4.29.0.jar;D:\Users\amelgar\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\12.10.0.jre8\mssql-jdbc-12.10.0.jre8.jar;D:\Users\amelgar\.m2\repository\e\edu\pucp\softven\SoftVenModel\1.0\SoftVenModel-1.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;D:\Users\amelgar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;D:\Users\amelgar\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="user.country" value="ES"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
-    <property name="sun.java.command" value="D:\Users\amelgar\AppData\Local\Temp\surefire18156863474733928332\surefirebooter-20250428071308519_3.jar D:\Users\amelgar\AppData\Local\Temp\surefire18156863474733928332 2025-04-28T07-13-08_329-jvmRun1 surefire-20250428071308519_1tmp surefire_0-20250428071308519_2tmp"/>
+    <property name="sun.java.command" value="D:\Users\amelgar\AppData\Local\Temp\surefire14533573391703140778\surefirebooter-20250428085102803_3.jar D:\Users\amelgar\AppData\Local\Temp\surefire14533573391703140778 2025-04-28T08-51-02_669-jvmRun1 surefire-20250428085102803_1tmp surefire_0-20250428085102803_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión10 - soporte MSSQL\SoftVenPersistance\target\test-classes;G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión10 - soporte MSSQL\SoftVenPersistance\target\classes;D:\Users\amelgar\.m2\repository\pe\edu\pucp\softven\SoftVenDBManager\1.0\SoftVenDBManager-1.0.jar;D:\Users\amelgar\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;D:\Users\amelgar\.m2\repository\com\mysql\mysql-connector-j\9.2.0\mysql-connector-j-9.2.0.jar;D:\Users\amelgar\.m2\repository\com\google\protobuf\protobuf-java\4.29.0\protobuf-java-4.29.0.jar;D:\Users\amelgar\.m2\repository\e\edu\pucp\softven\SoftVenModel\1.0\SoftVenModel-1.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;D:\Users\amelgar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;D:\Users\amelgar\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
+    <property name="surefire.test.class.path" value="G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión10 - soporte MSSQL\SoftVenPersistance\target\test-classes;G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión10 - soporte MSSQL\SoftVenPersistance\target\classes;D:\Users\amelgar\.m2\repository\pe\edu\pucp\softven\SoftVenDBManager\1.0\SoftVenDBManager-1.0.jar;D:\Users\amelgar\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;D:\Users\amelgar\.m2\repository\com\mysql\mysql-connector-j\9.2.0\mysql-connector-j-9.2.0.jar;D:\Users\amelgar\.m2\repository\com\google\protobuf\protobuf-java\4.29.0\protobuf-java-4.29.0.jar;D:\Users\amelgar\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\12.10.0.jre8\mssql-jdbc-12.10.0.jre8.jar;D:\Users\amelgar\.m2\repository\e\edu\pucp\softven\SoftVenModel\1.0\SoftVenModel-1.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;D:\Users\amelgar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;D:\Users\amelgar\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="D:\Users\amelgar"/>
     <property name="user.language" value="es"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="D:\Users\amelgar\AppData\Local\Temp\surefire18156863474733928332\surefirebooter-20250428071308519_3.jar"/>
+    <property name="surefire.real.class.path" value="D:\Users\amelgar\AppData\Local\Temp\surefire14533573391703140778\surefirebooter-20250428085102803_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.1+8-16"/>
@@ -59,17 +59,19 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testListarPorPeriodo" classname="pe.edu.pucp.softven.dao.ReporteVendedorDAOTest" time="0.201">
+  <testcase name="testListarPorPeriodo" classname="pe.edu.pucp.softven.dao.ReporteVendedorDAOTest" time="0.213">
     <system-out><![CDATA[listarPorPeriodo
 ]]></system-out>
-    <system-err><![CDATA[abr 28, 2025 7:13:11 A. M. pe.edu.pucp.softven.daoImp.DAOImplBase ejecutarModificacionEnBD
+    <system-err><![CDATA[abr 28, 2025 8:51:06 A. M. pe.edu.pucp.softven.daoImp.DAOImplBase ejecutarModificacionEnBD
 INFO: com.mysql.cj.jdbc.CallableStatement: CALL SP_VEN_INSERTAR_DATOS_PRUEBA_REPORTE_VENDEDORES()
-abr 28, 2025 7:13:11 A. M. pe.edu.pucp.softven.daoImp.DAOImplBase ejecutarModificacionEnBD
+abr 28, 2025 8:51:06 A. M. pe.edu.pucp.softven.daoImp.DAOImplBase ejecutarModificacionEnBD
 INFO: com.mysql.cj.jdbc.CallableStatement: CALL SP_VEN_GENERAR_REPORTE_VENDEDORES(2025, 1)
-abr 28, 2025 7:13:11 A. M. pe.edu.pucp.softven.daoImp.DAOImplBase ejecutarModificacionEnBD
+abr 28, 2025 8:51:06 A. M. pe.edu.pucp.softven.daoImp.DAOImplBase ejecutarModificacionEnBD
 INFO: com.mysql.cj.jdbc.CallableStatement: CALL SP_VEN_GENERAR_REPORTE_VENDEDORES(2025, 2)
-abr 28, 2025 7:13:11 A. M. pe.edu.pucp.softven.daoImp.DAOImplBase ejecutarModificacionEnBD
+abr 28, 2025 8:51:06 A. M. pe.edu.pucp.softven.daoImp.DAOImplBase ejecutarModificacionEnBD
 INFO: com.mysql.cj.jdbc.CallableStatement: CALL SP_VEN_GENERAR_REPORTE_VENDEDORES(2025, 3)
+abr 28, 2025 8:51:06 A. M. pe.edu.pucp.softven.daoImp.DAOImplBase ejecutarModificacionEnBD
+INFO: com.mysql.cj.jdbc.CallableStatement: CALL SP_VEN_ELIMINAR_DATOS_PRUEBA_REPORTE_VENDEDORES()
 ]]></system-err>
   </testcase>
 </testsuite>

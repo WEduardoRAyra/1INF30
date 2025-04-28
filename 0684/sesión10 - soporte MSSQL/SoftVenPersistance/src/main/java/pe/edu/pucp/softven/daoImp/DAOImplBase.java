@@ -275,7 +275,7 @@ public abstract class DAOImplBase {
     public Integer retornarUltimoAutoGenerado() {
         Integer resultado = null;
         try {
-            String sql = "select @@last_insert_id as id";
+            String sql = DBManager.getInstance().retornarSQLParaUltimoAutoGenerado();
             this.statement = this.conexion.prepareCall(sql);
             this.resultSet = this.statement.executeQuery();
             if (this.resultSet.next()) {
@@ -311,11 +311,23 @@ public abstract class DAOImplBase {
     }
 
     public List listarTodos() {
+        String sql = null;
+        Consumer inclurValorDeParametro = null;
+        Object parametros = null;
+        return this.listarTodos(sql, inclurValorDeParametro, parametros);
+    }
+
+    public List listarTodos(String sql, Consumer inclurValorDeParametro, Object parametros) {
         List lista = new ArrayList<>();
         try {
             this.abrirConexion();
-            String sql = this.generarSQLParaListarTodos();
+            if (sql == null) {
+                sql = this.generarSQLParaListarTodos();
+            }
             this.colocarSQLenStatement(sql);
+            if (inclurValorDeParametro != null) {
+                inclurValorDeParametro.accept(parametros);
+            }
             this.ejecutarConsultaEnBD();
             while (this.resultSet.next()) {
                 agregarObjetoALaLista(lista);
