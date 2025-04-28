@@ -1,66 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pe.edu.pucp.softven.bo.ProductoBOTest" time="0.99" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pe.edu.pucp.softven.bo.ProductoBOTest" time="1.455" tests="1" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="21"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión07 - arquitectura/ventas/SoftVenBusiness/target/test-classes:/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión07 - arquitectura/ventas/SoftVenBusiness/target/classes:/Users/andres/.m2/repository/e/edu/pucp/softven/SoftVenModel/1.0/SoftVenModel-1.0.jar:/Users/andres/.m2/repository/pe/edu/pucp/softven/SoftVenPersistance/1.0/SoftVenPersistance-1.0.jar:/Users/andres/.m2/repository/pe/edu/pucp/softven/SoftVenDBManager/1.0/SoftVenDBManager-1.0.jar:/Users/andres/.m2/repository/commons-codec/commons-codec/1.18.0/commons-codec-1.18.0.jar:/Users/andres/.m2/repository/com/mysql/mysql-connector-j/9.2.0/mysql-connector-j-9.2.0.jar:/Users/andres/.m2/repository/com/google/protobuf/protobuf-java/4.29.0/protobuf-java-4.29.0.jar:/Users/andres/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:/Users/andres/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/andres/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/andres/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/Users/andres/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.0/junit-jupiter-params-5.6.0.jar:/Users/andres/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/Users/andres/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:"/>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenBusiness\target\test-classes;G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenBusiness\target\classes;D:\Users\amelgar\.m2\repository\e\edu\pucp\softven\SoftVenModel\1.0\SoftVenModel-1.0.jar;D:\Users\amelgar\.m2\repository\pe\edu\pucp\softven\SoftVenPersistance\1.0\SoftVenPersistance-1.0.jar;D:\Users\amelgar\.m2\repository\pe\edu\pucp\softven\SoftVenDBManager\1.0\SoftVenDBManager-1.0.jar;D:\Users\amelgar\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;D:\Users\amelgar\.m2\repository\com\mysql\mysql-connector-j\9.2.0\mysql-connector-j-9.2.0.jar;D:\Users\amelgar\.m2\repository\com\google\protobuf\protobuf-java\4.29.0\protobuf-java-4.29.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;D:\Users\amelgar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;D:\Users\amelgar\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="America/Lima"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="java.vm.specification.version" value="21"/>
-    <property name="user.country" value="419"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="user.country" value="ES"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="/Users/andres/Library/Java/JavaVirtualMachines/openjdk-21/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión07 - arquitectura/ventas/SoftVenBusiness/target/surefire/surefirebooter-20250315210820292_3.jar /Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión07 - arquitectura/ventas/SoftVenBusiness/target/surefire 2025-03-15T21-08-20_163-jvmRun1 surefire-20250315210820292_1tmp surefire_0-20250315210820292_2tmp"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="D:\Users\amelgar\AppData\Local\Temp\surefire13064199714187188260\surefirebooter-20250426144755224_3.jar D:\Users\amelgar\AppData\Local\Temp\surefire13064199714187188260 2025-04-26T14-47-54_988-jvmRun1 surefire-20250426144755224_1tmp surefire_0-20250426144755224_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión07 - arquitectura/ventas/SoftVenBusiness/target/test-classes:/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión07 - arquitectura/ventas/SoftVenBusiness/target/classes:/Users/andres/.m2/repository/e/edu/pucp/softven/SoftVenModel/1.0/SoftVenModel-1.0.jar:/Users/andres/.m2/repository/pe/edu/pucp/softven/SoftVenPersistance/1.0/SoftVenPersistance-1.0.jar:/Users/andres/.m2/repository/pe/edu/pucp/softven/SoftVenDBManager/1.0/SoftVenDBManager-1.0.jar:/Users/andres/.m2/repository/commons-codec/commons-codec/1.18.0/commons-codec-1.18.0.jar:/Users/andres/.m2/repository/com/mysql/mysql-connector-j/9.2.0/mysql-connector-j-9.2.0.jar:/Users/andres/.m2/repository/com/google/protobuf/protobuf-java/4.29.0/protobuf-java-4.29.0.jar:/Users/andres/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:/Users/andres/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/andres/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/andres/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/Users/andres/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.0/junit-jupiter-params-5.6.0.jar:/Users/andres/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/Users/andres/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:"/>
+    <property name="surefire.test.class.path" value="G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenBusiness\target\test-classes;G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenBusiness\target\classes;D:\Users\amelgar\.m2\repository\e\edu\pucp\softven\SoftVenModel\1.0\SoftVenModel-1.0.jar;D:\Users\amelgar\.m2\repository\pe\edu\pucp\softven\SoftVenPersistance\1.0\SoftVenPersistance-1.0.jar;D:\Users\amelgar\.m2\repository\pe\edu\pucp\softven\SoftVenDBManager\1.0\SoftVenDBManager-1.0.jar;D:\Users\amelgar\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;D:\Users\amelgar\.m2\repository\com\mysql\mysql-connector-j\9.2.0\mysql-connector-j-9.2.0.jar;D:\Users\amelgar\.m2\repository\com\google\protobuf\protobuf-java\4.29.0\protobuf-java-4.29.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;D:\Users\amelgar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;D:\Users\amelgar\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;D:\Users\amelgar\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/Users/andres"/>
+    <property name="user.home" value="D:\Users\amelgar"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2023-09-19"/>
-    <property name="java.home" value="/Users/andres/Library/Java/JavaVirtualMachines/openjdk-21/Contents/Home"/>
-    <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión07 - arquitectura/ventas/SoftVenBusiness"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenBusiness"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión07 - arquitectura/ventas/SoftVenBusiness/target/surefire/surefirebooter-20250315210820292_3.jar"/>
+    <property name="surefire.real.class.path" value="D:\Users\amelgar\AppData\Local\Temp\surefire13064199714187188260\surefirebooter-20250426144755224_3.jar"/>
+    <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="21+35-2513"/>
-    <property name="user.name" value="andres"/>
-    <property name="stdout.encoding" value="UTF-8"/>
-    <property name="path.separator" value=":"/>
-    <property name="os.version" value="13.7.4"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.runtime.version" value="22.0.1+8-16"/>
+    <property name="user.name" value="amelgar"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="maven.ext.class.path" value="/Applications/Apache NetBeans.app/Contents/Resources/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
-    <property name="localRepository" value="/Users/andres/.m2/repository"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-22\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="D:\Users\amelgar\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="/var/folders/cl/f5835lw558556y5fhdjpggfc0000gn/T/"/>
-    <property name="java.version" value="21"/>
-    <property name="user.dir" value="/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión07 - arquitectura/ventas/SoftVenBusiness"/>
-    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="D:\Users\amelgar\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenBusiness"/>
+    <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="native.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/andres/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-24\bin;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;c:\centuraprod;C:\Oracle12c\product\12.2.0\client_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\instantclient12_odbc;C:\MinGW\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;D:\Users\amelgar\AppData\Local\Microsoft\WindowsApps;D:\Users\amelgar\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;D:\Users\amelgar\AppData\Local\GitHubDesktop\bin;D:\Users\amelgar\AppData\Roaming\npm;D:\Users\amelgar\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA 2025.1\bin;;C:\Program Files\JetBrains\CLion 2025.1\bin;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="21+35-2513"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.class.version" value="65.0"/>
+    <property name="java.vm.version" value="22.0.1+8-16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testInsertar" classname="pe.edu.pucp.softven.bo.ProductoBOTest" time="0.958">
+  <testcase name="testInsertar" classname="pe.edu.pucp.softven.bo.ProductoBOTest" time="1.397">
     <system-out><![CDATA[insertar
 ]]></system-out>
+    <system-err><![CDATA[abr 26, 2025 2:47:58 P. M. pe.edu.pucp.softven.daoImp.DAOImplBase ejecutarModificacionEnBD
+INFO: com.mysql.cj.jdbc.CallableStatement: INSERT INTO VEN_PRODUCTOS(NOMBRE, DESCRIPCION, PRECIO) VALUES ('Mi nuevo producto', 'Descripción nuevo prod', 122.22)
+abr 26, 2025 2:47:58 P. M. pe.edu.pucp.softven.daoImp.DAOImplBase ejecutarModificacionEnBD
+INFO: com.mysql.cj.jdbc.CallableStatement: INSERT INTO VEN_PRODUCTOS(NOMBRE, DESCRIPCION, PRECIO) VALUES ('Mi nuevo producto2', 'Descripción nuevo prod2', 322.22)
+]]></system-err>
   </testcase>
 </testsuite>

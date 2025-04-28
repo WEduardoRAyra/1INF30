@@ -1,9 +1,9 @@
-/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión08 - refactorización/ventas/refactorizado/SoftVenModel/src/main/java/pe/edu/pucp/softven/model/ProductosDTO.java
-/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión08 - refactorización/ventas/refactorizado/SoftVenModel/src/main/java/pe/edu/pucp/softven/model/TiendasDTO.java
-/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión08 - refactorización/ventas/refactorizado/SoftVenModel/src/main/java/pe/edu/pucp/softven/model/VentasDetalles.java
-/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión08 - refactorización/ventas/refactorizado/SoftVenModel/src/main/java/pe/edu/pucp/softven/model/ReportesVendedoresDTO.java
-/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión08 - refactorización/ventas/refactorizado/SoftVenModel/src/main/java/pe/edu/pucp/softven/model/Estado.java
-/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión08 - refactorización/ventas/refactorizado/SoftVenModel/src/main/java/pe/edu/pucp/softven/model/VentasDTO.java
-/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión08 - refactorización/ventas/refactorizado/SoftVenModel/src/main/java/pe/edu/pucp/softven/model/VendedoresDTO.java
-/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión08 - refactorización/ventas/refactorizado/SoftVenModel/src/main/java/pe/edu/pucp/softven/model/PeriodosDTO.java
-/Users/andres/Library/CloudStorage/GoogleDrive-amelgar@gmail.com/Mi unidad/GitHubRepositorio_clone/1INF30-melgar/sesión08 - refactorización/ventas/refactorizado/SoftVenModel/src/main/java/pe/edu/pucp/softven/model/TiposDocumentosDTO.java
+G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenModel\src\main\java\pe\edu\pucp\softven\model\TiendasDTO.java
+G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenModel\src\main\java\pe\edu\pucp\softven\model\VentasDetalles.java
+G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenModel\src\main\java\pe\edu\pucp\softven\model\VentasDTO.java
+G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenModel\src\main\java\pe\edu\pucp\softven\model\ProductosDTO.java
+G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenModel\src\main\java\pe\edu\pucp\softven\model\PeriodosDTO.java
+G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenModel\src\main\java\pe\edu\pucp\softven\model\ReportesVendedoresDTO.java
+G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenModel\src\main\java\pe\edu\pucp\softven\model\TiposDocumentosDTO.java
+G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenModel\src\main\java\pe\edu\pucp\softven\model\VendedoresDTO.java
+G:\Mi unidad\GitHubRepositorio\1INF30\0684\sesión09 - procedimientos almacenados\sw - soporte MySQL\SoftVenModel\src\main\java\pe\edu\pucp\softven\model\Estado.java
