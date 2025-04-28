@@ -41,9 +41,9 @@ public abstract class DBManager {
     private static void createInstance() {
         if (DBManager.dbManager == null) {
             if (DBManager.obtenerMotorDeBaseDeDatos() == MotorDeBaseDeDatos.MYSQL) {
-                DBManagerMySQL.crearInstanciaConcreta();
+                DBManager.dbManager = new DBManagerMySQL();
             } else {
-                DBManagerMSSQL.crearInstanciaConcreta();
+                DBManager.dbManager = new DBManagerMySQL();
             }
             DBManager.dbManager.leer_archivo_de_propiedades();
         }

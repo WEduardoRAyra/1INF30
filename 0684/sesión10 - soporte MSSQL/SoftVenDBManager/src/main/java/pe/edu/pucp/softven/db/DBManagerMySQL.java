@@ -2,14 +2,8 @@ package pe.edu.pucp.softven.db;
 
 public class DBManagerMySQL extends DBManager {
 
-    private DBManagerMySQL() {
+    protected DBManagerMySQL() {
         //
-    }
-
-    static void crearInstanciaConcreta() {
-        if (DBManager.dbManager == null) {
-            DBManager.dbManager = new DBManagerMySQL();
-        }
     }
 
     @Override

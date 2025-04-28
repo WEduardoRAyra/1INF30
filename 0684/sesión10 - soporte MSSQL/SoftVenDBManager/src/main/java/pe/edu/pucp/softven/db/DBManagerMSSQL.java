@@ -3,14 +3,8 @@ package pe.edu.pucp.softven.db;
 
 public class DBManagerMSSQL extends DBManager{
 
-    private DBManagerMSSQL(){
+    protected DBManagerMSSQL(){
         //
-    }
-    
-    static void crearInstanciaConcreta() {
-        if (DBManager.dbManager == null) {
-            DBManager.dbManager = new DBManagerMSSQL();
-        }
     }
     
     @Override
